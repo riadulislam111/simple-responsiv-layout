@@ -5,14 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calender</title>
     <style>
-        .calender {
+        .calender{
             display: grid;
-            grid-template-columns: repeat (7, 1fr);
+            grid-template-columns:repeat(7, 1fr) ;
+            grid-template-rows: 30px repeat(5, 50px);
+            row-gap: 20px ;
+            column-gap: 10px
+        }
+        .date, .day{
+            background-color: aquamarine;
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        .day{
+            background-color: lightgray;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
     <div class="calender">
+        <div class="day">S</div>
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
         <div class="date">1</div>
         <div class="date">2</div>
         <div class="date">3</div>
@@ -43,11 +69,9 @@
         <div class="date">28</div>
         <div class="date">29</div>
         <div class="date">30</div>
-        <div class="date">31</div>
-        <div class="date">32</div>
-        <div class="date">33</div>
-        <div class="date">34</div>
-        <div class="date">35</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        
     </div>
 </body>
 </html>
